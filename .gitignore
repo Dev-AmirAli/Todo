@@ -1,0 +1,15 @@
+.env
+.env.example
+.env.local
+.env.staging
+env
+.vscode
+
+.venv
+.venv.example
+.venv.local
+.venv.staging
+venv
+.vscode
+# Built Visual Studio Code Extensions
+*.vsix
