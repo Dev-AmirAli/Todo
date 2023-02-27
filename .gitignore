@@ -3,7 +3,7 @@
 .env.local
 .env.staging
 env
-.vscode
+.vscodeidea
 .idea
 .venv
 .venv.example
