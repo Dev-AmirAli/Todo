@@ -3,12 +3,16 @@ from flask import Flask
 from flask_jwt_extended import JWTManager
 from flask_restful import Api
 from routes.user import user_api
+from routes.item import item_api
+from routes.store import store_api
 from config import MSQL_CONFIG
 from db import db
 
 app = Flask(__name__)
 
 app.register_blueprint(user_api, url_prefix='/user')
+app.register_blueprint(item_api, url_prefix='/item')
+app.register_blueprint(store_api, url_prefix='/store')
 
 app.config['SQLALCHEMY_DATABASE_URI'] = MSQL_CONFIG
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
