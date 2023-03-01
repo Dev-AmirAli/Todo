@@ -19,13 +19,5 @@ def create_tables():
     db.init_app(app)
     db.create_all()
 
-
-# Database
-# app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite'
-# app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-
-
-# api.add_resource(ProductList, '/products')
-# api.add_resource(ProductResource, '/product/<int:id>')
 if __name__ == '__main__':
     app.run(debug=True)
